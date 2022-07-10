@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kwitter</title>
+		<link rel="stylesheet" type="text/css" href="Kwitter.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	</head>
+	<body style="background-color: rgb(247, 225, 229) ;">
+		<img class="wave" src="wave.png">
+		<div class="container">
+			<div class="img">
+				<img src="bg.svg">
+			</div>
+			<div class="login-content">
+				<form action="kwitter_room.html">
+					<img id="bird" src="1.png">
+					<h2 id="title" class="title">Welcome To Kwitter</h2>
+					   <div class="input-div one">
+						  <div class="i">
+								  <i class="fas fa-user"></i>
+						  </div>
+						  <input type="text" id="user_name" class="form-control" placeholder="    User Name">
+					   </div>
+					  
+						
+					<input type="submit"  onclick="addUser() "   class="btn" value="Add User">
+				</form>
+			</div>
+		</div>
+		<script  src="kwitter.js"></script>
+	</body>
+	</html>

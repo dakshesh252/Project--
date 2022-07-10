@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Kwitter.css">
+<script src="kwitter_room.js"></script>
+</head>
+<body style="background-color: rgb(247, 225, 229) ;" onload="update1()">
+	<img class="wave" src="wave.png">
+  <div class="container" >
+	<div class="img">
+		<img src="bg.svg">
+	
+	</div>
+	<div>
+	<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<br><br>
+	<h1 class="header">
+		Kwitter<sup>
+			<img src="m2.png">
+		</sup>
+	</h1>
+  <br>
+  <h3 id="user-1name" ></h3>
+	<br>	
+			 <div class="form-group input_div_room_page">
+				<label id="label">#Add Room :</label>
+				<br>
+			<br>
+				<input type="text" id="room-name" class="form-control" placeholder="                                                                       #Room Name">
+			</div>
+			<br>
+			<button id="Add-button" class="btn btn-success" onclick="addroom()">#Add Room</button>
+    <br>
+		<h3  id="tr">#TRENDING ROOMS</h3>      
+		<br>
+		<br>
+		<br>
+
+		<div id="output" ></div>
+</div>
+	
+		
+		
+
+
+  </div>
+
+</body>
+</html>
